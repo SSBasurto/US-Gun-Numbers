@@ -1,6 +1,6 @@
 let myMap = L.map("map", {
     center: [41.515111142650824, -112.22313302713114],
-    zoom: 4
+    zoom: 3
 });
 
 let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -8,45 +8,55 @@ let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         }).addTo(myMap);
 
 /* GeoJson */
-let geo = './static/data/geo_states.json'
+const geo = './static/data/geo_states.json'
 
 /* state color json */
-let color = './static/data/state_color.json'
+const color = './static/data/state_color.json'
 // let color = './static/data/state_color.csv'
 
-// Color Function
-// function chooseColor(name) {    
-//     if (name == ) return "yellow";
-//     }
+/* State Center Points */
+// const center = './static/data/center_points.json'
+const center = './static/data/center_points.csv'
 
-// Column Function
-function getCol(matrix, col){
-    let column = [];
-    for(var i=0; i<matrix.length; i++){
-       column.push(matrix[i][col]);
-    }
-    return column;
- }
 
-Promise.all([d3.json(geo),d3.json(color)]).then(function(data) {
+Promise.all([d3.json(geo),d3.json(color),d3.csv(center)]).then(function(data) {
 
     // Data
-    feature = data[0].features
-    color = data[1]
-    console.log('States Features:',feature);
+    const features = data[0].features
+    const color = data[1]
+    const centers = data[2]
+    console.log('States Features:',features);
     console.log('State Color:', color); 
+    console.log('center:', centers);
+    console.log('center:', centers[0]['Longitude']);    
     
     // Appending Blue and Red States
     let blue = [];
     let red = [];
-
-    for (let i = 0; i < color.length; i++) {
+    
+    for (let i = 0; i < 25; i++) {
         blue.push(color[i]['Blue']);
         red.push(color[i]['Red']);
-        }
-        console.log('Blue:', blue);
-    
-    L.geoJson(data).addTo(myMap);
+    };
 
+    // Function for the color of State
+    function chooseColor(name) {    
+        if (blue.includes(name) ) return "blue";
+        else return "red";
+        };
+    console.log('blue:', blue);
     
-  });
+    // Geo Json
+    L.geoJson(data[0], {
+        style: function(feature) {
+            return {
+              color: "white",
+              fillColor: chooseColor(feature.properties.NAME),
+              fillOpacity: 0.40,
+              weight: 1.30
+            };
+        }
+
+    }).addTo(myMap);
+
+});
