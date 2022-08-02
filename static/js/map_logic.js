@@ -1,11 +1,3 @@
-// let myMap = L.map("map", {
-//     center: [41.515111142650824, -112.22313302713114],
-//     zoom: 3
-// });
-
-// let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-//         }).addTo(myMap);
 
 /* GeoJson */
 const geo = './static/data/geo_states.json'
@@ -17,7 +9,7 @@ const color = './static/data/state_color.json'
 const center = './static/data/center_points.csv'
 
 /* Guns CSV */
-const gun = './static/data/guns2.csv'
+const gun = './static/data/gun_stats.csv'
 
 /* Custom marker icon */
 let orangeIcon = new L.Icon({
