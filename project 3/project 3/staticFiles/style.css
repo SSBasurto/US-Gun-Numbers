@@ -1,0 +1,123 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    .navbar {
+      max-height: 50px;
+    }
+    .navigation .navbar-brand {
+      color: rgb(25, 42, 139);
+      margin-left: 0px;
+      flex-direction:inherit;
+      font-weight: bold;
+      background-color: rgb(33, 49, 194);
+      font-family: cochin;
+    }
+    .navbar {
+      background-color: rgb(61, 103, 218);
+      font-size: 35px; 
+    }
+    .active, .dropdown-menu .dropdown-item:active a:hover {
+      background-color: rgb(248, 248, 248);
+    }
+    .dropdown-item {
+      color: rgba(26, 29, 214, 0.75);
+    }
+    .dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover {
+      background-color: rgba(37, 17, 110, 0.75);
+    }
+    
+    .nav-link:hover {
+      background-color:rgba(228, 159, 156, 0.75);
+     }
+    
+    .navbar-brand:hover {
+    color: rgb(45, 158, 175);
+    }
+    a {
+      color: rgb(151, 10, 21);
+      font-size: 15px;
+    }
+    
+    img{
+      width:100%;
+      height:100%;
+    }
+    .active, .panel:hover {
+      border-color:rgba(179, 203, 240, 0.863);
+      border-style: solid;
+      
+    }
+    .vizualization {
+      width:50%;
+      height:50%;
+    }
+    
+    .title {
+      color: rgb(17, 40, 170);
+      font-family: cochin;
+      font-weight: bolder;
+      padding-top: 10px;
+    }
+    
+    p {
+    color: rgb(34, 75, 209);
+    font-family: 'segoe ui';
+    font-size: 16px;
+    }
+    
+    .box {
+      margin-top: 50px;
+      margin-bottom: 60px;
+      padding: 10px 30px 10px;
+      color: #e61e17;
+      background-color: rgb(255, 255, 255);
+    
+    }
+    
+    .table {
+      font-size: 15px;
+      border-top-color: rgb(255, 255, 255);
+    }
+    
+    footer {
+    background-color: #0f1b3f;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgb(37, 80, 87);
+    color: rgb(253, 255, 255);
+    min-height: 50px;
+    font-family: Menlo, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+    }
+    
+    @media(max-width: 992px) {
+      .navbar-expand-lg {
+      background-color: #350606;
+      }
+      .navbar {
+        max-height: none;
+        padding: inherit;
+      }
+      .navbar div {
+        margin: inherit;
+        background-color: rgb(126, 157, 241);
+      }
+      .navbar-brand {
+        padding: 10px;
+      }
+      button{
+        margin-right: 30px;
+      }
+      button:focus {
+        outline: 1px dotted;
+        outline: auto 5px;
+      }
+    }
