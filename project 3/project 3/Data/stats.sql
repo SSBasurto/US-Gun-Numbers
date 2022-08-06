@@ -1,0 +1,51 @@
+State,Number of School Shootings,2022 Pop.
+0,California,164,39995077
+1,Texas,135,29945493
+2,Florida,90,22085563
+3,Michigan,70,10116069
+4,Illinois,65,12808884
+5,Ohio,55,11852036
+6,Pennsylvania,54,13062764
+7,New York,49,20365879
+8,Maryland,47,6257958
+9,Georgia,46,10916760
+10,Tennessee,46,7023788
+11,Louisiana,44,4682633
+12,North Carolina,43,10620168
+13,Alabama,42,5073187
+14,Missouri,39,6188111
+15,Washington,32,7901429
+16,South Carolina,27,5217037
+17,Virginia,25,8757467
+18,Indiana,24,6845874
+19,Colorado,20,5922618
+20,Arkansas,18,3030646
+21,Connecticut,18,3612314
+22,Mississippi,17,2960075
+23,Wisconsin,15,5935064
+24,Kentucky,14,4539130
+25,Massachusetts,14,7126375
+26,Oregon,14,4318492
+27,Nevada,13,3185426
+28,Utah,13,3373162
+29,Arizona,12,7303398
+30,Iowa,12,3219171
+31,Minnesota,12,5787008
+32,New Jersey,12,9388414
+33,Oklahoma,11,4000953
+34,Kansas,10,2954832
+35,New Mexico,10,2129190
+36,Delaware,8,1008350
+37,Montana,8,1103187
+38,Nebraska,7,1988536
+39,New Hampshire,6,1389741
+40,Alaska,5,738023
+41,Rhode Island,4,1106341
+42,South Dakota,4,901165
+43,Hawaii,3,1474265
+44,West Virginia,3,1781860
+45,Idaho,2,1893410
+46,Maine,2,1369159
+47,Vermont,2,646545
+48,Wyoming,2,579495
+49,North Dakota,1,800394
